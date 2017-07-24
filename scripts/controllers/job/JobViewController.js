@@ -9,7 +9,7 @@ hrApp.controller('JobViewController', ['$scope', '$routeParams', '$location', 'J
          */
         JobService.findOne($routeParams.jobId)
             .then(function(res) {
-                $scope.job = res.data;
+                $scope.jobId = res.data;
             }, function(err) {
                 console.log('An error occurred while finding the employee: ' + err.status);
             });

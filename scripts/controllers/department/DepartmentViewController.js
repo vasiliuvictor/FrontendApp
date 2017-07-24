@@ -9,7 +9,7 @@ hrApp.controller('DepartmentViewController', ['$scope', '$http', '$routeParams',
          */
         DepartmentService.findOne($routeParams.departmentId)
             .then(function(res) {
-                $scope.department = res.data;
+                $scope.departmentId = res.data;
             }, function(err) {
                 console.log('An error occurred while finding the department: ' + err.status);
             });

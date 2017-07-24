@@ -54,7 +54,7 @@ module.exports = function (grunt) {
             proxies: [
                 {
                     context: '/app/mvc/',
-                    host: 'localhost',
+                    host: '192.168.99.100',
                     port: 49100,
                     https: false,
                     changeOrigin: false
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
             ],
             options: {
                 port: 9089,
-                // Change this to 'localhost' to deny access to the server from outside.
+                // Change this to 'localhost' to deny access to the  server from outside.
                 hostname: 'localhost',
                 livereload: 35729
             },

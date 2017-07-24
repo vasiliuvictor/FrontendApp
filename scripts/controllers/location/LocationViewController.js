@@ -9,7 +9,7 @@ hrApp.controller('LocationViewController', ['$scope', '$http', '$routeParams', '
          */
         LocationService.findOne($routeParams.locationId)
             .then(function(res) {
-                $scope.location = res.data;
+                $scope.locationId = res.data;
             }, function(err) {
                 console.log('An error occurred while finding the location: ' + err.status);
             });
